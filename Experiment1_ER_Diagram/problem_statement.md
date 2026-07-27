@@ -29,25 +29,29 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 
 | Entity | Attributes (PK, FK) | Notes |
 |--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+| Trainer|trainer_id (PK), name, specialization, phone_no                    |    Represents trainers who conduct fitness programs.   |
+| Program       | program_id (PK), name, category                 |Defines the fitness programs offered.       |
+| Member       |  member_id (PK), name, email, member_type                  |Represents registered gym members.       |
+| Session       | session_id (PK), session_time, session_type                 | Represents personal training sessions.      |
+|Attendance        |  attendance_id (PK), date, status                 | Stores attendance details for each session.      |
+|Payment |  payment_id (PK), member_id (FK), payment_type  |  Stores payment details of members. |
 
 ### Relationships and Constraints
 
 | Relationship | Cardinality | Participation | Notes |
 |--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+| Trainer – Program             | M:N           |  Mandatory             |A trainer teaches multiple programs, and a program may be taught by multiple trainers.       |
+| Member – Program             | M:N           |  Optional             | A member may join multiple programs.      |
+| Trainer – Session             |  1:M          |  Mandatory             |  One trainer handles many sessions.     |
+|Member – Session            |     1:M       |   Optional            | A member can book multiple sessions.      |
+| Session – Attendance           |  1:M          |     Mandatory          |  Every session has attendance records.     |
+|  Member – Payment          |   1:M         |   Mandatory            |  A member can make multiple payments.     |
 
 ### Assumptions
-- 
-- 
-- 
-
+- Every trainer can teach one or more programs.
+- Members may join multiple fitness programs.
+- Attendance is recorded for every session
+- Payments are made only by registered members.
 ---
 
 # Scenario B: City Library Event & Book Lending System
@@ -71,25 +75,26 @@ The Central Library wants to manage book lending and cultural events.
 
 | Entity | Attributes (PK, FK) | Notes |
 |--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+|Speaker        | speaker_id (PK), name, specialization                   |Represents speakers for library events.       |
+| Member       | member_id (PK), name, email                   | Represents registered library members.      |
+| Event       |  event_id (PK), name, date                  | Represents library events.      |
+| Book       |  book_id (PK), title, author, category                  | Represents books available in the library.      |
+| Loan       |   loan_id (PK), loan_date, return_date                 | Stores borrowing details of books.      |
 
 ### Relationships and Constraints
 
 | Relationship | Cardinality | Participation | Notes |
 |--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+|  Speaker – Event            | 1:M           | Mandatory              | One speaker can conduct multiple events.      |
+|Member – Event              | M:N           |  Optional             | A member may register for multiple events.      |
+| Member – Loan             | 1:M           | Mandatory              |  A member can borrow multiple books through loans.     |
+| Book – Loan             |   1:M         |   Mandatory            | A book can be associated with multiple loans over time      |
 
 ### Assumptions
-- 
-- 
-- 
-
+- Only registered members can borrow books.
+- Members may register for multiple events.
+- Every event has at least one speaker.
+- A book can be borrowed many times at different periods.
 ---
 
 # Scenario C: Restaurant Table Reservation & Ordering
@@ -113,24 +118,24 @@ A popular restaurant wants to manage reservations, orders, and billing.
 
 | Entity | Attributes (PK, FK) | Notes |
 |--------|--------------------|-------|
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
-|        |                    |       |
+| Customer       |   customer_id (PK), name, email, phone_no                 | Represents restaurant customers.      |
+| Reservation       |   reservation_id (PK), date_and_time, type, no_of_guests                 |  Stores reservation details.     |
+|  Waiter      |    waiter_id (PK), name, phone                | Represents restaurant waiters.      |
+| Order       |   order_id (PK), date, total_amount                 |  Stores order details.     |
+|  Dish    |    dish_id (PK), dish_name, category, price                |  Represents dishes available in the restaurant.     |
 
 ### Relationships and Constraints
 
 | Relationship | Cardinality | Participation | Notes |
 |--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
-
+|Customer – Reservation              | 1:M           | Mandatory              | A customer can make multiple reservations.      |
+| Waiter – Reservation             | 1:M           |    Mandatory           |   One waiter serves multiple reservations.    |
+| Reservation – Order             |   1:M         |     Mandatory          |   A reservation can have multiple orders.    |
+|Order – Dish              |     M:N       |        Mandatory       |    An order contains multiple dishes, and a dish can be part of multiple orders.   |
 ### Assumptions
-- 
-- 
-- 
+- Only customers can make reservations.
+- Every reservation is served by one waiter
+- Multiple dishes can be included in a single order.
 
 ---
 
