@@ -36,6 +36,11 @@ END;
 
 **Expected Output:**  
 Greater number is: 80
+## program:
+<img width="676" height="247" alt="Screenshot 2026-08-17 115334" src="https://github.com/user-attachments/assets/61f6ba5a-8fef-4041-bc63-34657dca1ea6" />
+
+# Output:
+<img width="510" height="214" alt="Screenshot 2026-08-17 115345" src="https://github.com/user-attachments/assets/6716d4aa-0a4f-491c-aa92-1c03a03668d5" />
 
 ---
 
