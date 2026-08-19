@@ -76,6 +76,12 @@ Sum of first 10 natural numbers is: 55
 n = 7  
 Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 
+## PROGRAM
+<img width="591" height="387" alt="Screenshot 2026-08-19 100137" src="https://github.com/user-attachments/assets/edc907bd-08b6-478c-9057-e5d4e8d32173" />
+
+## OUTPUT
+<img width="486" height="347" alt="Screenshot 2026-08-19 100148" src="https://github.com/user-attachments/assets/6cc51f3d-bb76-4dfe-80da-43652c586033" />
+
 ---
 
 ## 4. Write a PL/SQL Program to display the number in Reverse Order
