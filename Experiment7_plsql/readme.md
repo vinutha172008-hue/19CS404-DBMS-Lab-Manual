@@ -115,7 +115,11 @@ a = 10, b = 9, c = 15
 Largest of three number is 15
 
 ## PROGRAM
+<img width="670" height="366" alt="Screenshot 2026-08-19 102544" src="https://github.com/user-attachments/assets/b6e472e9-d4df-4244-bfbe-ec662c448b10" />
 
 ## OUTPUT
+<img width="457" height="213" alt="Screenshot 2026-08-19 102551" src="https://github.com/user-attachments/assets/9497408e-4faa-44c2-a992-dd21f7f88ca9" />
+
+
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
