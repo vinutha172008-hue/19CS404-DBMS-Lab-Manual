@@ -94,6 +94,12 @@ Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 **Expected Output:**  
 n = 1535  
 Reversed number is 5351
+## PROGRAM
+<img width="551" height="264" alt="Screenshot 2026-08-19 101928" src="https://github.com/user-attachments/assets/4bbaae89-f5ad-45ba-a638-420dbdd50763" />
+
+
+## OUTPUT
+<img width="477" height="239" alt="Screenshot 2026-08-19 101934" src="https://github.com/user-attachments/assets/bc0c947c-d959-4921-badf-c94b488778fe" />
 
 ---
 
@@ -108,5 +114,8 @@ Reversed number is 5351
 a = 10, b = 9, c = 15  
 Largest of three number is 15
 
+## PROGRAM
+
+## OUTPUT
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
