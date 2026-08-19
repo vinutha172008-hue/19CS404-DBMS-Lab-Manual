@@ -55,6 +55,13 @@ Greater number is: 80
 **Expected Output:**  
 Sum of first 10 natural numbers is: 55
 
+## program
+<img width="669" height="261" alt="Screenshot 2026-08-19 092052" src="https://github.com/user-attachments/assets/d95fe934-050c-46d5-8712-0905bb691e74" />
+
+
+## output
+<img width="457" height="216" alt="Screenshot 2026-08-19 092114" src="https://github.com/user-attachments/assets/edf53911-0108-4d82-b0d5-827dbadc4875" />
+
 ---
 
 ## 3. Write a PL/SQL program to generate Fibonacci series
