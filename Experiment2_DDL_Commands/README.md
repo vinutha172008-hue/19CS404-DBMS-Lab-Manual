@@ -125,15 +125,18 @@ FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="892" height="278" alt="Screenshot 2026-08-21 122430" src="https://github.com/user-attachments/assets/aa2217e4-ba85-44bd-9c69-aa3c95d96534" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+alter table Student_details
+add column Mobilenumber number;
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1265" height="435" alt="Screenshot 2026-08-21 122448" src="https://github.com/user-attachments/assets/d387c3a6-d549-4a18-a39e-9e59488676c1" />
+
 
 **Question 3**
 ---
