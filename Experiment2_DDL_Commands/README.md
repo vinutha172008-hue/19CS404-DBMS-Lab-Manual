@@ -107,7 +107,7 @@ CREATE TABLE Table_Name (
 --
 <img width="738" height="221" alt="Screenshot 2026-08-21 121759" src="https://github.com/user-attachments/assets/38172e12-f71a-4bfe-bfc1-f1a75e5db8f9" />
 
-```
+```sql
 CREATE TABLE Employees(
 EmployeeID INTEGER PRIMARY KEY,
 FirstName TEXT NOT NULL,
@@ -140,99 +140,152 @@ add column Mobilenumber number;
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="715" height="250" alt="Screenshot 2026-08-21 122740" src="https://github.com/user-attachments/assets/82b7ae66-0586-4089-86c6-65568f7c9136" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+INSERT INTO  student_details(RollNo,Name,Gender,Subject,MARKS)
+SELECT RollNo,Name,Gender,Subject,MARKS
+FROM Archived_students
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1219" height="364" alt="Screenshot 2026-08-21 122753" src="https://github.com/user-attachments/assets/028da847-51fc-4412-9139-849a246ec920" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="857" height="280" alt="Screenshot 2026-08-21 122913" src="https://github.com/user-attachments/assets/73d22ac8-7685-4d9b-867c-876b8d2b15ce" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+CREATE TABLE item(
+item_id TEXT PRIMARY KEY,
+item_desc TEXT NOT NULL,
+rate INTEGER NOT NULL,
+icom_id TEXT CHECK (LENGTH(icom_id)=4),
+FOREIGN KEY (icom_id) REFERENCES company(com_id)
+ON UPDATE CASCADE
+ON DELETE CASCADE
+);
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1197" height="458" alt="Screenshot 2026-08-21 122925" src="https://github.com/user-attachments/assets/1528e59a-af99-42c9-9bf5-52fcb4d2df9f" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="1083" height="374" alt="Screenshot 2026-08-21 123030" src="https://github.com/user-attachments/assets/0bdcdf2b-d096-4c1a-97ef-60ccad7f5995" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+INSERT INTO Books(ISBN,Title,Author,Publisher,YearPublished)
+SELECT ISBN,Title,Author,Publisher,YearPublished
+FROM Out_of_print_books;
+
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="1236" height="374" alt="Screenshot 2026-08-21 123043" src="https://github.com/user-attachments/assets/cee88c41-8cf1-47ce-8db5-ec6fa589aac4" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="1077" height="420" alt="Screenshot 2026-08-21 123142" src="https://github.com/user-attachments/assets/2bd8036f-5b3f-4255-977c-e15904568200" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+CREATE TABLE Orders(
+OrderID INTEGER,
+OrderDate TEXT,
+CustomerID INTEGER
+);
+
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="1256" height="482" alt="Screenshot 2026-08-21 123153" src="https://github.com/user-attachments/assets/e0c5ace3-3994-4108-80da-73f29cd60c15" />
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1200" height="395" alt="Screenshot 2026-08-21 123334" src="https://github.com/user-attachments/assets/cc768e98-6b31-4da5-ae74-8af91ea23635" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+ALTER TABLE Employees 
+ADD Date_of_joining Date;
+ALTER TABLE Employees
+RENAME COLUMN job_title TO Designation;
+
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="1255" height="426" alt="Screenshot 2026-08-21 123349" src="https://github.com/user-attachments/assets/2493919b-6bd4-4ad6-a4ee-175224bf3c93" />
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1210" height="307" alt="Screenshot 2026-08-21 123457" src="https://github.com/user-attachments/assets/caf17652-82f1-464b-bd53-b765a0df0371" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+INSERT INTO Products VALUES(104,'Tablet','Electronics',100,50);
 ```
 
 **Output:**
+<img width="1230" height="361" alt="Screenshot 2026-08-21 123510" src="https://github.com/user-attachments/assets/975caee9-91af-4c45-b48b-51efda5fec1d" />
 
-![Output8](output.png)
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1066" height="471" alt="Screenshot 2026-08-21 123556" src="https://github.com/user-attachments/assets/ef79ec9d-c247-4f4c-ad97-33ef8e036224" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+CREATE TABLE item(
+item_id TEXT PRIMARY KEY,
+item_desc TEXT NOT NULL,
+rate INTEGER NOT NULL,
+icom_id TEXT CHECK (LENGTH(icom_id)=4),
+FOREIGN KEY (icom_id) 
+REFERENCES company(com_id)
+ON UPDATE SET NULL
+ON DELETE SET NULL
+);
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="1250" height="461" alt="Screenshot 2026-08-21 123609" src="https://github.com/user-attachments/assets/b5e9f79f-2bac-4047-82a6-a6bee04108d3" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1129" height="297" alt="Screenshot 2026-08-21 123702" src="https://github.com/user-attachments/assets/743bd313-b4cf-44b7-9282-fecfdf740c47" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+CREATE TABLE Shipments(
+ShipmentID INTEGER PRIMARY KEY,
+ShipmentDate DATE,
+SupplierID INTEGER,
+OrderID INTEGER,
+FOREIGN KEY (SupplierID) REFERENCES Suppliers(SupplierID),
+FOREIGN KEY (OrderID) REFERENCES Orders(ORderID)
+);
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="1304" height="282" alt="Screenshot 2026-08-21 123714" src="https://github.com/user-attachments/assets/68d1022f-b275-420e-a3a2-62d170619cd7" />
+
 
 
 ## RESULT
