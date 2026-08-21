@@ -105,15 +105,28 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+--- Question 1 
+<img width="738" height="221" alt="Screenshot 2026-08-21 121759" src="https://github.com/user-attachments/assets/38172e12-f71a-4bfe-bfc1-f1a75e5db8f9" />
 
 ```sql
+
+
 -- Paste your SQL code below for Question 1
 ```
-
+CREATE TABLE Employees(
+EmployeeID INTEGER PRIMARY KEY,
+FirstName TEXT NOT NULL,
+LastName TEXT NOT NULL,
+Email TEXT UNIQUE,
+Salary INTEGER CHECK(Salary>0),
+DepartmentID INTEGER,
+FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
+);
+```
 **Output:**
 
-![Output1](output.png)
+<img width="1260" height="519" alt="Screenshot 2026-08-21 121919" src="https://github.com/user-attachments/assets/444e59a5-3c26-475e-8da4-628d749ceaa8" />
+
 
 **Question 2**
 ---
