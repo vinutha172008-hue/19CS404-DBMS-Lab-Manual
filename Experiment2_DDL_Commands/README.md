@@ -105,13 +105,8 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
---- Question 1 
 <img width="738" height="221" alt="Screenshot 2026-08-21 121759" src="https://github.com/user-attachments/assets/38172e12-f71a-4bfe-bfc1-f1a75e5db8f9" />
 
-```sql
-
-
--- Paste your SQL code below for Question 1
 ```
 CREATE TABLE Employees(
 EmployeeID INTEGER PRIMARY KEY,
