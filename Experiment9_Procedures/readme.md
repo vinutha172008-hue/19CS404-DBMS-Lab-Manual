@@ -100,9 +100,13 @@ Factorial of 5 is 120
 - Accept an input parameter.
 - Use the `MOD` function to check if the number is divisible by 2.
 - Display whether it is Even or Odd using `DBMS_OUTPUT.PUT_LINE`.
+## program
+<img width="617" height="295" alt="Screenshot 2026-08-31 224438" src="https://github.com/user-attachments/assets/b2a8bca2-e3a0-412d-93ef-a4a810ee6b9a" />
 
 **Expected Output:**  
 12 is Even
+## output
+<img width="482" height="232" alt="Screenshot 2026-08-31 224454" src="https://github.com/user-attachments/assets/8c3a05b5-0d6d-46b2-ad8b-fc069fffcfe7" />
 
 ---
 
