@@ -98,9 +98,13 @@ END;
 - Insert sample salary values for the employees.
 - Use a parameterized cursor to accept a salary range as input and fetch employees within that range.
 - Implement exception handling to catch and display relevant error messages.
+  ## program
+  <img width="675" height="512" alt="Screenshot 2026-08-31 221024" src="https://github.com/user-attachments/assets/fc98d8aa-2ba4-4b73-a45a-92dd1fccb7a0" />
+
 
 **Output:**  
-The program should display the employee details within the specified salary range or an error message if no data is found.
+<img width="568" height="262" alt="Screenshot 2026-08-31 221034" src="https://github.com/user-attachments/assets/28cd0514-1ecf-42b4-8919-406d19f31db7" />
+
 
 ---
 
