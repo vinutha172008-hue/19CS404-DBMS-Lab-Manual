@@ -46,11 +46,13 @@ END;
 - Write a **BEFORE DELETE** trigger on the `sensitive_data` table.
 - Use `RAISE_APPLICATION_ERROR` to prevent deletion and issue a custom error message.
 ## program
+<img width="807" height="331" alt="Screenshot 2026-08-31 232410" src="https://github.com/user-attachments/assets/41b67c25-320f-449c-9dd5-a169d216e4af" />
 
 
 **Expected Output:**
 - If an attempt is made to delete a record from `sensitive_data`, an error message is raised, e.g., `ERROR: Deletion not allowed on this table.`
 ## output
+<img width="815" height="427" alt="Screenshot 2026-08-31 232353" src="https://github.com/user-attachments/assets/6f4c27f7-0d1a-4b8d-9452-f2399ae3e9b3" />
 
 
 ---
@@ -59,9 +61,13 @@ END;
 **Steps:**
 - Add a `last_modified` column to the `products` table.
 - Write a **BEFORE UPDATE** trigger on the `products` table to set the `last_modified` column to the current timestamp whenever an update occurs.
+## program
+
 
 **Expected Output:**
 - The `last_modified` column in the `products` table is updated automatically to the current date and time when any record is updated.
+## output
+
 
 ---
 
