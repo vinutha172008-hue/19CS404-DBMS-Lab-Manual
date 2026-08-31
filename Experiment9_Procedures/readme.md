@@ -59,9 +59,17 @@ Key Differences:
 - Inside the procedure, compute the square of the input number.
 - Use `DBMS_OUTPUT.PUT_LINE` to display the result.
 - Call the procedure with a number as input.
+## program
+
+<img width="707" height="262" alt="Screenshot 2026-08-31 223020" src="https://github.com/user-attachments/assets/b35a5ff6-0b4c-416c-bc5c-297647d9a5a3" />
+
 
 **Expected Output:**  
 Square of 6 is 36
+
+## output
+
+<img width="382" height="242" alt="Screenshot 2026-08-31 223029" src="https://github.com/user-attachments/assets/810c003c-312f-4102-b7ba-7c370ecb6030" />
 
 ---
 
