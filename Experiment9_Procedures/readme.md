@@ -84,6 +84,12 @@ Square of 6 is 36
 
 **Expected Output:**  
 Factorial of 5 is 120
+## program
+
+<img width="497" height="208" alt="Screenshot 2026-08-31 223518" src="https://github.com/user-attachments/assets/1a3ef169-fb88-4b1c-946a-a434736458c4" />
+## output
+
+<img width="402" height="207" alt="Screenshot 2026-08-31 223528" src="https://github.com/user-attachments/assets/7b207cd2-cedc-432b-8baa-8c689ad428c9" />
 
 ---
 
