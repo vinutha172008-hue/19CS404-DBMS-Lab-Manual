@@ -29,9 +29,15 @@ END;
 **Steps:**
 - Create two tables: `employees` (for storing data) and `employee_log` (for logging the inserts).
 - Write an **AFTER INSERT** trigger on the `employees` table to log the new data into the `employee_log` table.
+## program
+<img width="741" height="451" alt="Screenshot 2026-08-31 231530" src="https://github.com/user-attachments/assets/1a265031-e717-419c-85fb-08c67df3dde4" />
+
 
 **Expected Output:**
 - A new entry is added to the `employee_log` table each time a new record is inserted into the `employees` table.
+## output
+<img width="551" height="141" alt="Screenshot 2026-08-31 231602" src="https://github.com/user-attachments/assets/6cc5781d-5ca8-461d-a5ef-50d12d2d41ac" />
+
 
 ---
 
@@ -39,9 +45,13 @@ END;
 **Steps:**
 - Write a **BEFORE DELETE** trigger on the `sensitive_data` table.
 - Use `RAISE_APPLICATION_ERROR` to prevent deletion and issue a custom error message.
+## program
+
 
 **Expected Output:**
 - If an attempt is made to delete a record from `sensitive_data`, an error message is raised, e.g., `ERROR: Deletion not allowed on this table.`
+## output
+
 
 ---
 
