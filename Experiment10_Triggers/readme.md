@@ -78,11 +78,13 @@ END;
 - Create an `audit_log` table with a counter column.
 - Write an **AFTER UPDATE** trigger on the `customer_orders` table to increment the counter in the `audit_log` table every time a record is updated.
 ## program
+<img width="567" height="452" alt="Screenshot 2026-08-31 233012" src="https://github.com/user-attachments/assets/39755301-b767-4923-9337-c27c699f4e2a" />
 
 
 **Expected Output:**
 - The `audit_log` table will maintain a count of how many updates have been made to the `customer_orders` table.
 ## output
+<img width="422" height="130" alt="Screenshot 2026-08-31 233024" src="https://github.com/user-attachments/assets/c1c60c01-74b5-4a6f-bdd2-0af8b8108ed5" />
 
 
 ---
