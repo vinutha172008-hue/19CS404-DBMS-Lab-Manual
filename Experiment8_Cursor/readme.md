@@ -75,9 +75,13 @@ END;
 - Insert some sample data into the table.
 - Use a simple cursor to fetch and display employee names and designations.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
+## program:
+
+<img width="683" height="437" alt="Screenshot 2026-08-31 220537" src="https://github.com/user-attachments/assets/8a1cef2b-c77e-4b2f-86d6-6b7984a56362" />
 
 **Output:**  
-The program should display the employee details or an error message.
+<img width="685" height="275" alt="Screenshot 2026-08-31 220519" src="https://github.com/user-attachments/assets/09a2404c-2848-46eb-890a-f47647a05706" />
+
 
 ---
 
