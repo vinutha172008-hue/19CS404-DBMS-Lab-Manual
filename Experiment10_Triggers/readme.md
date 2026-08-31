@@ -62,11 +62,13 @@ END;
 - Add a `last_modified` column to the `products` table.
 - Write a **BEFORE UPDATE** trigger on the `products` table to set the `last_modified` column to the current timestamp whenever an update occurs.
 ## program
+<img width="582" height="437" alt="Screenshot 2026-08-31 232709" src="https://github.com/user-attachments/assets/e7263ce4-bcd8-4e94-8ecc-3f835f39cf08" />
 
 
 **Expected Output:**
 - The `last_modified` column in the `products` table is updated automatically to the current date and time when any record is updated.
 ## output
+<img width="897" height="176" alt="Screenshot 2026-08-31 232723" src="https://github.com/user-attachments/assets/27bede98-9b63-4602-b8ca-d1e8f3439e47" />
 
 
 ---
@@ -75,9 +77,13 @@ END;
 **Steps:**
 - Create an `audit_log` table with a counter column.
 - Write an **AFTER UPDATE** trigger on the `customer_orders` table to increment the counter in the `audit_log` table every time a record is updated.
+## program
+
 
 **Expected Output:**
 - The `audit_log` table will maintain a count of how many updates have been made to the `customer_orders` table.
+## output
+
 
 ---
 
