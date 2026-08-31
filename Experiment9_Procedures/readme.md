@@ -118,9 +118,14 @@ Factorial of 5 is 120
 - Use a loop to reverse the digits of the number.
 - Return the reversed number.
 - Call the function and display the output.
+## program
+<img width="527" height="257" alt="Screenshot 2026-08-31 230323" src="https://github.com/user-attachments/assets/f2c243ae-d7ce-4c55-bc6c-5aabc36808b4" />
 
 **Expected Output:**  
 Reversed number of 1234 is 4321
+## output
+<img width="357" height="185" alt="Screenshot 2026-08-31 230333" src="https://github.com/user-attachments/assets/edc6cbed-89ad-49d8-9e00-46732e0b0f0e" />
+
 
 ---
 
@@ -131,6 +136,8 @@ Reversed number of 1234 is 4321
 - Accept an input number.
 - Use a loop from 1 to 10 to multiply the input number.
 - Display the multiplication results using `DBMS_OUTPUT.PUT_LINE`.
+## program
+<img width="672" height="295" alt="Screenshot 2026-08-31 230521" src="https://github.com/user-attachments/assets/77bf40e2-257e-4bae-89bc-473af454cc8e" />
 
 **Expected Output:**  
 Multiplication table of 5:  
@@ -139,6 +146,9 @@ Multiplication table of 5:
 5 x 3 = 15  
 ...  
 5 x 10 = 50
+## output
+<img width="472" height="337" alt="Screenshot 2026-08-31 230543" src="https://github.com/user-attachments/assets/b696829e-4ac8-4a7b-83cd-9800327fd425" />
+
 
 ## RESULT
 Thus, the PL/SQL programs using procedures and functions were written, compiled, and executed successfully.
