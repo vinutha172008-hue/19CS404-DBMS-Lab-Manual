@@ -166,9 +166,12 @@ END;
 - Insert sample data into the `employees` table with different department numbers.
 - Use a cursor with the `FOR UPDATE` clause to lock the rows of employees in a specific department and update their salary.
 - Implement exception handling to handle `NO_DATA_FOUND` or other errors that may occur.
+## program
+<img width="607" height="500" alt="Screenshot 2026-08-31 221927" src="https://github.com/user-attachments/assets/7bcd6f12-c136-451b-b488-7474a7089a13" />
 
 **Output:**  
-The program should update employee salaries and display a message, or it should display an error message if no data is found.
+<img width="498" height="230" alt="Screenshot 2026-08-31 221937" src="https://github.com/user-attachments/assets/8f1eebd1-bc9c-4b21-a862-ee8e5fe101c2" />
+
 
 ---
 
