@@ -121,9 +121,13 @@ END;
 - Insert sample department numbers for employees.
 - Use a cursor FOR loop to fetch and display employee names along with their department numbers.
 - Implement exception handling to catch the relevant exceptions.
+  ## program
+  <img width="581" height="385" alt="Screenshot 2026-08-31 221310" src="https://github.com/user-attachments/assets/ffcb4708-d366-464b-a22a-a1e2f10efed5" />
+
 
 **Output:**  
-The program should display employee names with their department numbers or the appropriate error message if no data is found.
+<img width="397" height="246" alt="Screenshot 2026-08-31 221332" src="https://github.com/user-attachments/assets/d036dd2d-974e-4107-9011-4327e5d61a7c" />
+
 
 ---
 
@@ -140,6 +144,7 @@ The program should display employee names with their department numbers or the a
 - Insert sample data into the `employees` table.
 - Declare a cursor using `%ROWTYPE` to fetch complete rows from the `employees` table.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
+## program
 
 **Output:**  
 The program should display employee records or the appropriate error message if no data is found.
