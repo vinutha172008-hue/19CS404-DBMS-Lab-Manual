@@ -145,9 +145,11 @@ END;
 - Declare a cursor using `%ROWTYPE` to fetch complete rows from the `employees` table.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
 ## program
+<img width="700" height="515" alt="Screenshot 2026-08-31 221725" src="https://github.com/user-attachments/assets/7cfb3a01-b12f-460a-9277-6908040e011a" />
 
 **Output:**  
-The program should display employee records or the appropriate error message if no data is found.
+<img width="492" height="242" alt="Screenshot 2026-08-31 221735" src="https://github.com/user-attachments/assets/6fdd6643-d71a-4020-8a3a-2556dd75e2d4" />
+
 
 ---
 
